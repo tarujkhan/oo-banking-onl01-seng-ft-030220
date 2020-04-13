@@ -1,5 +1,6 @@
 class BankAccount
 
+<<<<<<< HEAD
 attr_accessor :balance, :status
 attr_reader :name
 
@@ -11,6 +12,15 @@ end
 
 def deposit(money)
   @balance += money
+=======
+attr_accessor :name, :balance, :status
+
+def initialize(name)
+  @name = name.dup.freeze
+  @balance = 1000
+  @status = 'open'
+end
+>>>>>>> a3abebfda136e71c385b8f605df199c3919080d1
 end
 
 def display_balance
